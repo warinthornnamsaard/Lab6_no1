@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function addnumber(){
+                var textInput1 = document.getElementById("Number1");
+                let Number1 = textInput1.value;
+                var textInput2 = document.getElementById("Number2");
+                let Number2 = textInput2.value;
+                var textInput3 = document.getElementById("Ans");
+                textInput3.value = parseInt(Number1)+parseInt(Number2);
+            }
+        </script>
+    </head>
+    <body>
+        <input type="number" id="Number1"> +
+        <input type="number" id="Number2"> =
+        <input type="number" id="Ans">
+        <input type="button" id="addButton" value="Go Go" onclick="addnumber()">
+    </body>
+</html>
